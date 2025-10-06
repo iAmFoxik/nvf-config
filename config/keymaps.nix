@@ -46,7 +46,7 @@
     }
     # Highlight
     {
-    key = ",,";
+      key = ",,";
       mode = "n";
       silent = true;
       desc = "Turn off highlighting";
@@ -66,6 +66,14 @@
       silent = true;
       desc = "Previous tab";
       action = ":tabprevious<CR>";
+    }
+    # FZF
+    {
+      key = "<C-r>";
+      mode = "n";
+      silent = true;
+      desc = "Open fzf files";
+      action = ":FzfLua files<CR>";
     }
   ];
 }
