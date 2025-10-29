@@ -13,6 +13,10 @@
           })
         '';
       };
+      # dependencies
+      toggleterm = {
+        package = pkgs.vimPlugins.toggleterm-nvim;
+      };
     };
     keymaps = [
       {
@@ -20,7 +24,7 @@
         mode = "n";
         silent = true;
         desc = "Run Overseer Task";
-        action = ":OverseerRun<CR>";
+        action = "<CMD>OverseerRun<CR>";
       }
     ];
   };

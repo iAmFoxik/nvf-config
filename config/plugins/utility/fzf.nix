@@ -5,11 +5,11 @@
     };
     keymaps = [
       {
-        key = "<C-f>";
+        key = "<C-r>";
         mode = "n";
         silent = true;
         desc = "Open fzf files";
-        action = ":FzfLua files<CR>";
+        action = "<CMD>FzfLua files<CR>";
       }
     ];
   };

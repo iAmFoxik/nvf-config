@@ -6,14 +6,14 @@
       mode = "n";
       silent = true;
       desc = "Vertical split";
-      action = ":vsplit<CR>";
+      action = "<CMD>vsplit<CR>";
     }
     {
       key = "\\";
       mode = "n";
       silent = true;
       desc = "Horizontal split";
-      action = ":split<CR>";
+      action = "<CMD>split<CR>";
     }
     # Go to windows
     {
@@ -21,28 +21,28 @@
       mode = "n";
       silent = true;
       desc = "Go to the window on the left";
-      action = ":wincmd h<CR>";
+      action = "<CMD>wincmd h<CR>";
     }
     {
       key = "<leader>j";
       mode = "n";
       silent = true;
       desc = "Go to the window on the down";
-      action = ":wincmd j<CR>";
+      action = "<CMD>wincmd j<CR>";
     }
     {
       key = "<leader>k";
       mode = "n";
       silent = true;
       desc = "Go to the window on the up";
-      action = ":wincmd k<CR>";
+      action = "<CMD>wincmd k<CR>";
     }
     {
       key = "<leader>l";
       mode = "n";
       silent = true;
       desc = "Go to the window on the right";
-      action = ":wincmd l<CR>";
+      action = "<CMD>wincmd l<CR>";
     }
     # Highlight
     {
@@ -50,7 +50,7 @@
       mode = "n";
       silent = true;
       desc = "Turn off highlighting";
-      action = ":nohlsearch<CR>";
+      action = "<CMD>nohlsearch<CR>";
     }
     # Tab
     {
@@ -58,14 +58,22 @@
       mode = "n";
       silent = true;
       desc = "Next tab";
-      action = ":tabnext<CR>";
+      action = "<CMD>tabnext<CR>";
     }
     {
       key = "[t";
       mode = "n";
       silent = true;
       desc = "Previous tab";
-      action = ":tabprevious<CR>";
+      action = "<CMD>tabprevious<CR>";
+    }
+    # Redo
+    {
+      key = "<S-u>";
+      mode = "n";
+      silent = true;
+      desc = "Redo";
+      action = "<CMD>later<CR>";
     }
   ];
 }
