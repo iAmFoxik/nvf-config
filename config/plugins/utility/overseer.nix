@@ -7,16 +7,12 @@
           require('overseer').setup({
             strategy = {
               'toggleterm',
-              direction = 'float',
               auto_scroll = true,
             },
           })
         '';
       };
       # dependencies
-      toggleterm = {
-        package = pkgs.vimPlugins.toggleterm-nvim;
-      };
     };
     keymaps = [
       {

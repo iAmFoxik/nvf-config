@@ -75,5 +75,22 @@
       desc = "Redo";
       action = "<CMD>later<CR>";
     }
+    ### Open
+    {
+      key = "oa";
+      mode = "n";
+      silent = true;
+      desc = "Toggle Aerial";
+      action = "<CMD>AerialToggle<CR>";
+    }
+
+    ### Terminal
+    {
+      key = "<esc>";
+      mode = "t";
+      silent = true;
+      desc = "Close terminal";
+      action = "<C-\\><C-n>";
+    }
   ];
 }
